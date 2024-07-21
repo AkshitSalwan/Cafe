@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Contact Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .contact-form, .order-form {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 4rem;
+      margin: 5em;
+    }
+    .pincode-circles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .pincode-circle1 {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color:aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+    }
+    .submit{
+        background-color:aliceblue;
+    }
+    .container-fluid{
+        background-color: bisque;
+        width: 100%;
+    }
+    .submit:hover{
+        background-color:blanchedalmond;
+    }
+    footer {
+            background-color: black;
+            color:chocolate;
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+        }
+  </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="cafe_logo.jpg" height="80px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" target="_blank">🏠Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cafe-product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cafe-contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    
+    <div class="row">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form" id="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form" id="email" placeholder="E-mail">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" class="form" id="phone" placeholder="Contact no.">
+          </div>
+          <div class="form-group">
+            <label for="message">Suggestions:</label>
+            <input class="form" id="message" rows="4" placeholder="suggestions"></input>
+          </div>
+          <button type="submit" class="submit">Send Message:</button>
+        </form>
+      </div>
+
+      <div class="order-form">
+        <h2>Order Now</h2>
+        <form>
+          <div class="form-group">
+            <label for="item">Item Name:</label>
+            <input type="text" class="form" id="item" placeholder="Select items">
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" class="form" id="quantity" placeholder="Quantity">
+          </div>
+          <div class="form-group">
+            <label for="add-ons">Quantity:</label>
+            <input type="number" class="form" id="quantity" placeholder="add-ons">
+          </div>
+          <div class="form-group">
+            <label for="instructions">Special Instructions(if any):</label>
+            <input class="form" id="instructions" placeholder="Instructions"></input>
+          </div>
+          <button type="submit" class="submit">Order</button>
+        </form>
+      </div>
+    </div>
+    <section>
+    <div class="pincode-circles">
+      <div class="pincode-circle1">
+        <p>Chandigarh</p>
+    </div>
+
+    <div class="pincode-circles">
+        <div class="pincode-circle1">
+          <p>Mumbai</p>
+      </div>
+
+      <div class="pincode-circles">
+        <div class="pincode-circle1">
+          <p>Gurgaon</p>
+      </div>
+
+      <div class="pincode-circles">
+        <div class="pincode-circle1">
+          <p>Delhi</p>
+      </div>
+
+      <div class="pincode-circles">
+        <div class="pincode-circle1">
+          <p>Bangalore</p>
+      </div>
+  </div>
+</section>
+  <footer>
+    Contact us: thesmashers@gmail.com or 1234567890
+    <br>
+    Do visit our other branch at: Mike street, New Delhi.
+</footer>
+</body>
+</html>
